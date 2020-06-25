@@ -1,0 +1,201 @@
+body{
+    margin:20px;
+    background-color:cadetblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'source sans pro', sans-serif;
+    color: whitesmoke;
+}
+
+#cookie{
+    border-radius: 20px;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 200px;
+    background-color: rgba(255,249,156,0.8);
+    margin-top: 30px;
+    padding: 20px;
+    z-index: 1;
+    position: fixed;
+    top: 0;
+}
+.main_container{
+    min-height: 600px;
+    min-width: 600px;
+    padding-bottom: 70px;
+    padding-right: 30px;
+    padding-left: 30px;
+    background-color: darkslategray;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border: 2px solid gold;
+}
+
+.main_container .header{
+    text-align: center;
+    color: gold;
+
+}
+
+.menu{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+   
+}
+
+.menu div{
+    display: flex;
+    justify-content: center;
+}
+h1{
+    font-family: 'Monoton', cursive;
+    font-size: 59px;
+}
+.header{
+     margin-top: 40px;
+     margin-bottom: 60px;
+}
+
+#search_from_to form{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#search_from form{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+#search_from form *{
+  margin-left: 5px;
+  margin-right: 10px;
+}
+
+    .from_field, #to_field{
+        width: 180px;
+        height: 40px;
+        font-size: 20px;
+    }
+    #submit{
+        margin-top: 10px;
+        width: 100px;
+        height: 40px;
+    }
+
+/*Table*/
+.table{
+    padding-bottom: 10px;
+    font-family: 'Share tech mono', monospace;
+    font-size: 17px;
+    color: yellow;
+    border: 2px solid red;
+    background-color: black;
+}
+
+.table_header{
+    font-family: 'source sans pro', sans-serif;
+    color: white;
+    border-bottom: 1px solid white;
+}
+
+
+#crossed{
+    text-decoration: line-through;
+}
+
+#departure_table{
+    display: grid;
+    grid-template-columns: 1fr 0.7fr 1.2fr 1.6fr;
+    justify-items: center;
+}
+
+#journey_table{
+    display: grid;
+    grid-template-columns: 1fr 0.7fr 0.5fr 1.6fr 1.2fr;
+    justify-items: center;
+}
+
+#estimated_time{
+    color: red;
+}
+
+@media only screen and (max-width: 600px){
+    body{
+        margin: 0px;
+    }
+    #cookie{
+    width: 50vw;
+}
+    .main_container{
+        height: 100vh;
+        padding: 0px;
+        padding-bottom: 50;
+        min-width: 100%;
+        width: 100%;
+        border-radius: 0px;
+        border: 0px;
+    }
+    .menu{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .menu div{
+        margin-left: 30px;
+    }
+    
+    .header{
+     margin-top: 0px;
+     margin-bottom: 0px;
+    }
+
+    
+    h1{
+    font-size: 28px;
+    margin-bottom: 0px;
+    }
+    
+    
+    .result{
+        width: 100%;
+    }
+    .search_query h2{
+        font-size: 17px;
+    }
+    
+    #search_from_to form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;   
+}
+    .from_field, #to_field{
+        width: 90%;
+        height: 40px;
+        font-size: 29px;
+    }
+    #submit{
+        margin-top: 10px;
+        width: 70%;
+        height: 40px;
+    }
+    #search_from form{      
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+    .table{
+    font-size: 3.4vw;
+    margin-bottom: 50px;
+    }
+ 
+}
+
+
